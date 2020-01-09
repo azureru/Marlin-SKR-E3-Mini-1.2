@@ -534,7 +534,7 @@
   // #define DEFAULT_bedKi .023
   // #define DEFAULT_bedKd 305.4
 
-  // hasil `M303 E-1 S60 C10` manual
+  // result of `M303 E-1 S60 C10` manual
   #define DEFAULT_bedKp 57.63
   #define DEFAULT_bedKi 11.23
   #define DEFAULT_bedKd 197.10  
@@ -726,7 +726,8 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 103 }
+// !mod - e-step calibrated from the printer using https://3daddict.com/3d-printer-extruder-calibration-steps/ method
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 106 }
 
 /**
  * Default Max Feed Rate (mm/s)
